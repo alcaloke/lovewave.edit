@@ -57,7 +57,7 @@ a {
 
 .doubleFlex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 5%;
 }
 
@@ -88,9 +88,4 @@ a {
   border: 1px solid #efd6f5; /* lightplum */
   border-radius: 7px;
   /* color: #0000cc;*/
-}
-
-#tempP {
-  text-align: center;
-  margin: 0 5%;
 }
