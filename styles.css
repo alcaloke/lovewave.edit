@@ -1,0 +1,96 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Muli', sans-serif; */
+}
+
+body {
+  /* width: 960px; */
+  /* margin: 10px auto; */
+  background-color: white;
+}
+
+header {
+  width: 960px;
+  height: 192px;
+  margin: 10px auto;
+}
+
+p {
+  font-size: 11pt;
+}
+
+a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.menu {
+  display: flex;
+  margin: 10px 5%;
+  padding: 0;
+
+  font-family: 'Roboto Mono', monospace;
+}
+
+.menu > a {
+  flex: 1;
+}
+
+.menu > a:hover {
+  color: aqua;
+}
+
+.menu > a > div {
+  padding: 7px;
+  margin: 3px;
+
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #efd6f5; /* lightplum */
+
+  text-align: center;
+  font-size: 14pt;
+
+  /* color: hotpink; */
+}
+
+.doubleFlex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.doubleFlexWords {
+  margin: 3px;
+  padding: 5px 30px 5px 30px;
+
+  border: 2px solid aliceblue;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-top-left-radius: 5px;
+
+  color: black;
+}
+
+
+.doubleFlexWords > h2 {
+  text-align: center;
+}
+
+.doubleFlex >  div {
+  align-self: flex-start;
+
+  margin: 3px;
+  padding: 20px;
+
+  background-color: white;
+  border: 1px solid #efd6f5; /* lightplum */
+  border-radius: 7px;
+  /* color: #0000cc;*/
+}
+
+#tempP {
+  text-align: center;
+  margin: 0 5%;
+}
