@@ -140,3 +140,43 @@ new p5(function(p) {
     }
   },
   'logo');
+
+  //Don't worry. Be content
+  new p5(function(p) {
+    let bauhaus;
+
+    p.preload = function() {
+      bauhaus = p.loadFont('assets/fonts/BauhausStd-Medium.otf');
+    }
+    p.setup = function() {
+      p.createCanvas(300, 300);
+    }
+
+    let x1 = 0;
+    let xs1 = 1;
+    let x2 = 0;
+    let xs2 = -1;
+
+    p.draw = function() {
+      p.background(255);
+      p.push();
+      p.translate(p.width / 2, p.height / 2);
+      p.textFont(bauhaus);
+      p.textAlign(p.CENTER);
+      p.textSize(40);
+      p.fill(p.color('plum'));
+      p.text("Don't worry",x1,-40);
+      p.text("Be content",x2,40);
+      p.pop();
+
+      x1 += xs1;
+      if (x1 > p.width / 2 || x1 < - p.width / 2) {
+        xs1 *= -1;
+      }
+      x2 += xs2;
+      if (x2 > p.width / 2 || x2 < - p.width / 2) {
+        xs2 *= -1;
+      }
+    }
+  },
+  "dontWorry"); 

@@ -15,7 +15,7 @@ header {
 }
 
 p {
-  font-size: 11pt;
+  font-size: 16pt;
 }
 
 a {
@@ -25,11 +25,12 @@ a {
 
 .doubleFlex {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 0 5%;
 }
 
 .doubleFlexWords {
+  flex: 3;
   margin: 3px;
   padding: 5px 30px 5px 30px;
 
@@ -47,7 +48,7 @@ a {
 
 .doubleFlex >  div {
   align-self: flex-start;
-
+  flex: 1;
   margin: 3px;
   padding: 20px;
 
